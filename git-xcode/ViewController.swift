@@ -10,6 +10,10 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    //MARK: Outlets
+    @IBOutlet weak var textFieldMsg: UITextField!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -19,7 +23,7 @@ class ViewController: UIViewController {
     @IBAction func showHello() {
         
         //Alerta
-        let alert = UIAlertController(title: "Hello World", message: "Integração do Git com o Xcode", preferredStyle: .alert)
+        let alert = UIAlertController(title: "Hello World", message: textFieldMsg.text, preferredStyle: .alert)
         
         let action = UIAlertAction(title: "OK", style: .default, handler: nil)
         
