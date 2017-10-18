@@ -18,6 +18,7 @@ class ViewController: UIViewController {
     // MARK - Actions
     @IBAction func showHello() {
         
+        //Alerta
         let alert = UIAlertController(title: "Hello World", message: "Integração do Git com o Xcode", preferredStyle: .alert)
         
         let action = UIAlertAction(title: "OK", style: .default, handler: nil)
